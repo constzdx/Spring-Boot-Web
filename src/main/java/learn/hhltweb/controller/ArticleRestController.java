@@ -23,8 +23,7 @@ public class ArticleRestController {
     //@RequestMapping(value = "/article", method = POST, produces = "application/json")
     @PostMapping("/article")
     public AjaxResponse saveArticle(@RequestBody ArticleVO article) {
-    /*public @ResponseBody  AjaxResponse saveArticle(@RequestParam String  id,
-                                                   @RequestParam String  author) {*/
+
 
         log.info("saveArticle：{}",article);
 

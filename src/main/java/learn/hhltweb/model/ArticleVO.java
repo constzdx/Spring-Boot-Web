@@ -10,6 +10,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Date;
 import java.util.List;
 
@@ -17,12 +19,12 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@JsonPropertyOrder(value={"content","title"})
+//@JsonPropertyOrder(value={"content","title"})
 public class ArticleVO {
 
-    //@JsonIgnore
+    @JsonIgnore
     private Long id;
-
+    //请求别名
     //@JsonProperty("auther")
     private String author;
     private String title;
